@@ -1,0 +1,14 @@
+
+#container
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    color:lightslategray;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 400px;
+
+}

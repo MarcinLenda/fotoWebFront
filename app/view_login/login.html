@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="styles/login.css"  type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<html>
+<div class="container" ng-app="loginUser" ng-controller="loginController">
+    <div id="login">
+
+        <form action="javascript:void(0);" method="post" ng-submit="loginIN()">
+
+            <h1>Zaloguj</h1>
+
+            <fieldset class="clearfix">
+
+                <p><span class="fontawesome-user"></span><input type="text" placeholder="Login" ng-model="login" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <p><span class="fontawesome-lock"></span><input type="password"  placeholder="******" ng-model="password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                <p><input type="submit" value="Sign In" ng-click='loginIN()'></p>
+
+            </fieldset>
+
+        </form>
+
+        <p>Not a member? <a href="#!/register"><span style="color:#D9042B">Sign up now</span></a><span  style="color:#D9042B" class="fontawesome-arrow-right"></span></p>
+        <div style="clear:both"> </div>
+    </div> <!-- end login -->
+
+
+
+</div>
+</html>
+

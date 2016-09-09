@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="pl" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fotomaszewski</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/fontello.css" type="text/css" />
+    <link rel="stylesheet" href="styles/gallery.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="styles/app.css">
+
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+<body background="images/dark_leather.png">
+
+<div id="wrapper">
+
+
+    <header>
+            <img src="images/lk2.png" alt=""/>
+    </header>
+
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#!/aboutme">O mnie</a></li>
+            <li>
+                <a href="#!/gallery">Galeria</a>
+                <ul>
+                    <li><a href="#">Krajobrazy</a></li>
+                    <li><a href="#">Eventy</a></li>
+                    <li><a href="#">Przyroda</a></li>
+                    <li><a href="#">Berlin</a></li>
+                </ul>
+            </li>
+            <li><a href="#!/contact">Kontakt</a></li>
+            <li><a href="#!/login"></i>Zaloguj</a></li>
+        </ul>
+    </nav>
+
+    <div style="clear:both"></div>
+
+
+    <div id="test" ng-view></div>
+
+
+    <footer>
+        <p> Wszelkie prawa zastrzeżone </p>
+    </footer>
+</div>
+/3
+
+1<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="view_aboutme/aboutme.js"></script>
+<script src="view_gallery/gallery.js"></script>
+<script src="view_login/login.js"></script>
+<script src="view_contact/contact.js"></script>
+<script src="view_register/register.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
