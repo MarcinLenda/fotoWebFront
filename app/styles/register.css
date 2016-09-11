@@ -14,8 +14,7 @@
 /* ---------- GENERAL ---------- */
 h1
 {
-    font-size: 34px;
-    font-family: 'Lobster', cursive;
+    font:bold 35px Arial, Helvetica;
     color: #04acec;
     text-align: center;
     padding-bottom: 10px;
@@ -77,9 +76,9 @@ p {
 }
 
 #login form span {
-    background-color: #363b41;
+    background-color: #BF2622;
     border-radius: 3px 0px 0px 3px;
-    color: #606468;
+    color: black;
     display: block;
     float: left;
     height: 50px;
@@ -94,9 +93,9 @@ p {
 
 #login form input[type="text"], input[type="password"],input[type='confirmPassword'],input[type='name'],input[type='surname'],
 input[type='email'] {
-    background-color: chocolate;
+    background-color: #777777;
     border-radius: 0px 3px 3px 0px;
-    color: black;
+    color: #000000;
     margin-bottom: 1em;
     padding: 0 16px;
     width: 230px;
