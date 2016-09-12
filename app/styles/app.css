@@ -175,6 +175,8 @@ footer
     clear: both;
 }
 
+
+
 * html .menu             { zoom: 1; } /* IE6 */
 *:first-child+html .menu { zoom: 1; } /* IE7 */
 

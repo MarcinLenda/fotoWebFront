@@ -5,7 +5,7 @@
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
-    'ngRoute'
+    'ngRoute','ngResource','RESTservice'
 
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
@@ -14,23 +14,27 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
     $routeProvider
         .when('/',{
             templateUrl: 'views/aboutme.html',
-            controller: 'aboutmeCtrl'
+            controller: 'PageController'
         })
         .when('/gallery',{
             templateUrl: 'views/gallery.html',
-            controller: 'galleryCtrl'
+            controller: 'PageController'
         })
         .when('/contact',{
             templateUrl: 'views/contact.html',
-            controller: 'contactCtrl'
+            controller: 'PageController'
         })
         .when('/register',{
             templateUrl: 'views/register.html',
-            controller: 'registerCtrl'
+            controller: 'PageController'
         })
         .when('/login',{
             templateUrl: 'views/login.html',
-            controller: 'loginCtrl'
+            controller: 'PageController'
+        })
+        .when('/put',{
+            templateUrl: 'views/panelAdmin.html',
+            controller: 'PageController'
         })
         .otherwise({redirectTo: '/'});
 }]);
