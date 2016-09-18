@@ -1,21 +1,22 @@
-<link rel="stylesheet" href="styles/register.css" media="screen" type="text/css" />
-<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<div id="register">
 
-<div class="container">
-    <div id="login">
-        <form action="javascript:void(0);" method="get" ng-submit="register()">
-            <h1>Zarejestruj</h1>
-            <fieldset class="clearfix">
-                <p><span class="fontawesome-user"></span><input type="text"  placeholder="Login" ng-model="login" ></p>
-                <p><span class="fontawesome-lock"></span><input type="password" placeholder="********"  ng-model="password" ></p>
-                <p><span class="fontawesome-lock"></span><input type="password" placeholder="********"  ng-model="confirmPassword"></p>
-                <p><span class="fontawesome-lock"></span><input type="name" placeholder="Imię"  ng-model="name"></p>
-                <p><span class="fontawesome-lock"></span><input type="surname" placeholder="Nazwisko"   ng-model="surname"></p>
-                <p><span class="fontawesome-lock"></span><input type="email" placeholder="E-mail" ng-model="email"></p>
-                <p><input type="submit" value="Zarejestruj" ng-click='register()'></p>
-            </fieldset>
-        </form>
-        <p>Not a member? <a href="#"><span style="color:#D9042B">Sign up now</span></a><span  style="color:#D9042B" class="fontawesome-arrow-right"></span></p>
-        <div style="clear:both"> </div>
-    </div> <!-- end login -->
+    <form name="form2">
+        <div class="formData">
+                <h2>Rejestracja</h2>
+            <label for="username">Username</label>
+            <input  type="text" name="Login" id="username" placeholder="login" />
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password"/>
+
+            <label for="password">Confirm password</label>
+            <input type="password" name="password" id="passwordConfirm" placeholder="confirm password"/>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="password" id="email" placeholder="email"/>
+
+                <button type="submit" class="btn">Zarejestruj</button>
+                <a href="#!/login" >Masz już konto?</a>
+        </div>
+    </form>
 </div>

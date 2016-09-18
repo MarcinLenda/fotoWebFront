@@ -4,37 +4,41 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
-    'ngRoute','ngResource','RESTservice'
+var app = angular.module('myApp', [
+    'ngRoute','ngResource', 'RESTservice'
 
 ]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+ config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
 
-    $routeProvider
-        .when('/',{
-            templateUrl: 'views/aboutme.html',
-            controller: 'PageController'
+   $routeProvider
+       .when('/',{
+            templateUrl: 'views/home.html',
+            controller: ''
         })
+       .when('/aboutme',{
+           templateUrl: 'views/aboutme.html',
+           controller: ''
+       })
+         .when('/login',{
+          templateUrl: 'views/login.html',
+          controller: ''
+      })
         .when('/gallery',{
             templateUrl: 'views/gallery.html',
-            controller: 'PageController'
-        })
-        .when('/contact',{
-            templateUrl: 'views/contact.html',
-            controller: 'PageController'
+           controller: ''
+       })
+         .when('/slider',{
+            templateUrl: 'views/slider.html',
+            controller: 'slider'
         })
         .when('/register',{
             templateUrl: 'views/register.html',
-            controller: 'PageController'
+           controller: ''
+       })
+        .when('/contact',{
+           templateUrl: 'views/contact.html',
+             controller: 'registerCtrl'
         })
-        .when('/login',{
-            templateUrl: 'views/login.html',
-            controller: 'PageController'
-        })
-        .when('/put',{
-            templateUrl: 'views/panelAdmin.html',
-            controller: 'PageController'
-        })
-        .otherwise({redirectTo: '/'});
-}]);
+         .otherwise({redirectTo: '/'});
+ }]);

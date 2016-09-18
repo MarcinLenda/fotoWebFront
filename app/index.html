@@ -1,70 +1,52 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>
-<html lang="pl" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fotomaszewski</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles/fontello.css" type="text/css" />
-    <link rel="stylesheet" href="styles/gallery.css" media="screen" type="text/css" />
-    <link rel="stylesheet" href="styles/app.css">
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" ng-app="myApp" class="no-js>
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="utf-8">
 
-    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+	<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+	<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
-<body background="images/dark_leather.png">
-
-<div id="wrapper">
-
-
-    <header>
-            <img src="images/lk2.png" alt=""/>
-    </header>
-
-
-    <nav>
-        <ul class="menu">
-            <li><a href="#!/aboutme">O mnie</a></li>
-            <li>
-                <a href="#!/gallery">Galeria</a>
-                <ul>
-                    <li><a href="#">Portret / modeling</a></li>
-                    <li><a href="#">Krajobrazy / miasta</a></li>
-                    <li><a href="#">Opuszczone / zapomniane</a></li>
-                    <li><a href="#">Piłka nożna</a></li>
-                </ul>
-            </li>
-            <li><a href="#!/contact">Kontakt</a></li>
-            <li><a href="#!/login"></i>Zaloguj</a></li>
-        </ul>
-    </nav>
-
-    <div style="clear:both"></div>
-
-
-    <div id="test" ng-view></div>
-
-
-    <footer>
-        <p class="footer"> Wszelkie prawa zastrzeżone </p>
-    </footer>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#!/home">Fotomaszewski</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li ><a href="#!/home.html" accesskey="1" title="">Home</a></li>
+				<li ><a href="#!/aboutme"  title="">O mnie</a></li>
+				<li><a href="#!/gallery" >Galeria</a></li>
+				<li><a href="#!/login"  title="">Logowanie</a></li>
+				<li><a href="#!/contact" >Kontakt</a></li>
+			</ul>
+		</div>
+	</div>
 </div>
 
-
+<div id="wrapper" >
+	<div id="test"  ng-view></div>
+</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; All rights reserved. | <img src="images/f2.png" alt="fotomaszewski"/>| Design by Promar </p>
+</div>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -73,6 +55,9 @@
 <script src="components/version/interpolate-filter.js"></script>
 <script src="js/app.js"></script>
 <script src="js/restService.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="js/slider.js"></script>
+
 
 </body>
 </html>

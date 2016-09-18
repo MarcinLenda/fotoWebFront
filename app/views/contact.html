@@ -1,17 +1,11 @@
-<link rel="stylesheet" href="styles/css/fontello.css" type="text/css" />
-<link rel="stylesheet" href="styles/contact.css" type="text/css" />
 
-<div id="container">
+<div id="contact">
+    <form ng-controller="registerCtrl">
 
-    <article>
-        <h2>
-            Zapraszam do wybrania kontaktu ze mną!
-        </h2>
-    </article>
+        <input name="name" type="text" class="feedback-input" placeholder="Temat" ng-model="subject"/>
+        <input name="email" type="text" class="feedback-input" placeholder="Twój email" ng-model="from" />
+        <textarea name="text" class="feedback-input" placeholder="Treść" ng-model="content"></textarea>
 
-   <i class="icon-facebook"></i></a>
-    <i class="icon-phone"></i>
-    <i class="icon-mail"></i>
-    <div style="clear:both"></div>
-
+        <input type="submit" value="Wyślij" ng-click="register()"/>
+    </form>
 </div>

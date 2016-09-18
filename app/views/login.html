@@ -1,29 +1,18 @@
-<link rel="stylesheet" href="styles/login.css"  type="text/css" />
-<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<div id="login">
 
-<div class="container">
-    <div id="login">
+    <form name="form">
 
-        <form action="javascript:void(0);" method="post" ng-submit="loginIN()">
+            <div class="formData">
+                <h2>Login</h2>
+            <label for="username">Username</label>
+            <input  type="text" name="Login" id="username" placeholder="Login" />
 
-            <h1>Zaloguj</h1>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password"/>
 
-            <fieldset class="clearfix">
+                <button type="submit" class="btn">Login</button>
+                <a href="#!/register"  >Rejestracja</a>
+            </div>
 
-                <p><span class="fontawesome-user"></span><input type="text" placeholder="Login" ng-model="login" onBlur="if(this.value == '') this.value = 'Login'" onFocus="if(this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
-                <p><span class="fontawesome-lock"></span><input type="password"  placeholder="******" ng-model="password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
-                <p><input type="submit" value="Sign In" ng-click='loginIN()'></p>
-
-            </fieldset>
-
-        </form>
-
-        <p>Not a member? <a href="#!/register"><span style="color:#D9042B">Sign up now</span></a><span  style="color:#D9042B" class="fontawesome-arrow-right"></span></p>
-        <div style="clear:both"> </div>
-    </div> <!-- end login -->
-
-
-
+    </form>
 </div>
-
-
