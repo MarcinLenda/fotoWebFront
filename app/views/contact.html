@@ -1,11 +1,9 @@
 
 <div id="contact">
-    <form ng-controller="registerCtrl">
-
-        <input name="name" type="text" class="feedback-input" placeholder="Temat" ng-model="subject"/>
-        <input name="email" type="text" class="feedback-input" placeholder="Twój email" ng-model="from" />
-        <textarea name="text" class="feedback-input" placeholder="Treść" ng-model="content"></textarea>
-
-        <input type="submit" value="Wyślij" ng-click="register()"/>
+    <form name="formContact" ng-submit="contactSubmit()">
+        <input name="name" type="text" class="feedback-input" placeholder="Temat" ng-model="data.subject" ng-minlength="3" required/>
+        <input name="email" type="email" class="feedback-input" placeholder="Twój email" ng-model="data.from" required/>
+        <textarea name="text" class="feedback-input" placeholder="Treść" ng-model="data.content" required></textarea>
+        <input type="submit" value="Wyślij" ng-disabled="formContact.$invalid"/>
     </form>
 </div>

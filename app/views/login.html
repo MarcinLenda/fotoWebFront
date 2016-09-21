@@ -1,18 +1,18 @@
-<div id="login">
-
-    <form name="form">
+<div id="login" data-ng-app="exampleApp">
 
             <div class="formData">
+                <form name="formLogin" novalidate>
+
                 <h2>Login</h2>
-            <label for="username">Username</label>
-            <input  type="text" name="Login" id="username" placeholder="Login" />
+            <label>Username</label>
+            <input  type="text" name="login" placeholder="Login" ng-model="contact.login" ng-required="true"/>
 
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Password"/>
+            <label>Password</label>
+            <input type="password" name="password"  placeholder="Password" ng-model="contact.password" ng-required="true"/>
 
-                <button type="submit" class="btn">Login</button>
-                <a href="#!/register"  >Rejestracja</a>
+                <button type="submit" ng-disabled="formLogin.$invalid" class="btn">Login</button>
+                <a href="#/register"  >Rejestracja</a>
+                </form>
             </div>
 
-    </form>
 </div>

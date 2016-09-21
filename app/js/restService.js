@@ -1,32 +1,51 @@
 /**
  * Created by Promar on 12.09.2016.
  */
-angular.module('RESTservice', [])
-    .controller('registerCtrl',['MyService', function($scope, $http, MyService) {
-        $scope.answer = MyService.register();
 
-RESTservice.service('MyService', function($http, $scope) {
+var app = angular.module('app', []);
+/*
+app.service('MyService',['$http','$scope', function($http, $scope) {
+
     this.register = function() {
         $http.post('http://localhost:8080/home/allPhotos', JSON.stringify({
-            from :      $scope.from,
-            subject:    $scope.subject,
-            content :   $scope.content
+            "from":      $scope.from2,
+            "subject":    $scope.subject,
+            "content" :   $scope.content
 
         })).success(function (data) {
             // jesli wszystko poszlo OK to na succes zwroci dane co robisz w return i sa w json pod data
             console.log('Wszystko ok');
-        })
-        .error(function (data) {
+        }).error(function (data) {
             console.log('error');
 
         });
     }
 
 
-});
-
-
 }]);
+*/
+app.controller('registerCtrl',function($scope, $http) {
+
+    $scope.data = {};
+
+    $scope.contactSubmit = function () {
+
+        console.log("Heloł");
+
+        $http({
+            method  : 'POST',
+            url     : 'http://localhost:8080/mail',
+            data    : $scope.data,
+            headers : {'Content-type': 'application/json'}
+        })
+        .success(function (data) {
+            // jesli wszystko poszlo OK to na succes zwroci dane co robisz w return i sa w json pod data
+            console.log('Wszystko ok');
+        }).error(function (data) {
+            console.log('error');
+        });
+    }
+});
 // var path='';
 //
 //

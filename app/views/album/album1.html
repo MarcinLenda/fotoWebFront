@@ -1,0 +1,18 @@
+
+<title>Title of the document</title>
+
+
+<body ng-app="GalleryApp" ng-controller="album1Ctrl">
+
+<div id="galleryAlbum">
+
+    <h1>{{title}}</h1>
+    <ul lightbox="images">
+        <li ng-repeat="image in images">
+
+            <a href="{{image}}" class="lightbox-trigger"><img  src="{{image}}"></a>
+
+    </li>
+    </ul>
+</div>
+</body>

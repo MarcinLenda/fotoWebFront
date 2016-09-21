@@ -13,7 +13,7 @@ body
 	font-size: 12pt;
 	font-weight: 300;
 	color: #000000;
-	background: url(images/choice.jpg) no-repeat;
+	background: url(../images/choice.jpg) no-repeat;
 	background-size: 100% 100%;
 
 
@@ -561,6 +561,10 @@ ul.contact li a.icon-rss:before
 	border:2px solid #CC4949;
 }
 
+input.ng-invalid.ng-touched
+{
+	border:2px solid red;
+}
 .formData a
 {
 	font-size: 15px;
@@ -647,4 +651,33 @@ textarea {
 	font-weight:700;
 }
 #contact [type="submit"]:hover { background:#CC4949; }
+
+#galleryAlbum h1
+{
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 20px;
+}
+
+#galleryAlbum ul
+{
+	list-style-type: none;
+
+}
+
+#galleryAlbum img
+{
+	width:150px;
+	height:150px;
+	float:left;
+	border: solid 2px white;
+	margin-bottom: 30px;
+}
+
+#galleryAlbum img:hover
+{
+	opacity: 0.7;
+	cursor: hand;
+}
+
 
