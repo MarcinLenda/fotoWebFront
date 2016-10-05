@@ -28,7 +28,19 @@ var app = angular.module('myApp', [
         })
         .when('/gallery/album1', {
             templateUrl: 'views/album/album1.html',
-            controller: 'album1Ctrl'
+            controller: 'album1Ctrl',
+        })
+        .when('/gallery/album2', {
+            templateUrl: 'views/album/album2.html',
+            controller: 'album1Ctrl',
+        })
+        .when('/gallery/album3', {
+            templateUrl: 'views/album/album3.html',
+            controller: 'album1Ctrl',
+        })
+        .when('/gallery/album4', {
+            templateUrl: 'views/album/album4.html',
+            controller: 'album1Ctrl',
         })
         .when('/slider', {
             templateUrl: 'views/slider.html',
@@ -40,7 +52,11 @@ var app = angular.module('myApp', [
         })
         .when('/contact', {
             templateUrl: 'views/contact.html',
-            controller: 'registerCtrl'
+            controller: 'registerCtrl',
+        })
+        .when('/admin', {
+            templateUrl: 'views/admin.html',
+            controller: 'myCtrlUpload',
         })
         .otherwise({redirectTo: '/'});
 }]);

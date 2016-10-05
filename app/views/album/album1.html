@@ -1,18 +1,13 @@
 
-<title>Title of the document</title>
-
-
-<body ng-app="GalleryApp" ng-controller="album1Ctrl">
-
-<div id="galleryAlbum">
-
-    <h1>{{title}}</h1>
+<div id="galleryAlbum"  ng-app="GalleryApp" ng-controller="album1Ctrl">
+    <h1>{{'Album: Opuszczone miejsca'}}</h1>
+    <h3><a ng-href="#/gallery/">->Powrót do albumu głównego</a></h3>
     <ul lightbox="images">
         <li ng-repeat="image in images">
+            <a ng-show="image.nameAlbum=='album1'" href="{{image.url}}" class="lightbox-trigger"><img  src="{{image.url}}"></a>
 
-            <a href="{{image}}" class="lightbox-trigger"><img  src="{{image}}"></a>
-
-    </li>
+        </li>
     </ul>
 </div>
-</body>
+
+

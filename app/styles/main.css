@@ -9,7 +9,7 @@ body
 	margin: 0px;
 	padding: 0px;
 	background: #0186ba;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family:  'Source Sans Pro', sans-serif;
 	font-size: 12pt;
 	font-weight: 300;
 	color: #000000;
@@ -34,7 +34,7 @@ h3
 h5
 {
 	font-size: 22px;
-	font-family: "Palatino Linotype";
+	font-family: 'Source Sans Pro', sans-serif;
 	margin-left: 800px;
 	color: white;
 }
@@ -178,6 +178,10 @@ ul.contact li a.icon-rss:before
 	border-radius: 20px;
 	text-align: center;
 	color: #272925;
+}
+.button:hover
+{
+	cursor: hand;
 }
 
 /*********************************************************************************/
@@ -477,13 +481,13 @@ ul.contact li a.icon-rss:before
 #login
 {
 	width: 305px;
-	height: 290px;
+	min-height: 330px;
 	margin: 0 auto;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	border: solid 1px gainsboro;
+	border: solid 1px #0186ba;
 	border-radius: 5px;
-	background:rgb(30,30,40);
+	background:rgba(30,30,40,0.8);
 	text-align: center;
 }
 
@@ -492,15 +496,21 @@ ul.contact li a.icon-rss:before
 	font-size: 20px;
 }
 
+#login [type="submit"]
+{
+	cursor: hand;
+}
+
 .formData label
 {
-	font-family: "Sofia", cursive;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
 	color: white;
+
 }
 .formData h2
 {
-	font-family: "Sofia", cursive;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 28px;
 	color:#6D7781;
 	margin-bottom: 20px;
@@ -521,7 +531,7 @@ ul.contact li a.icon-rss:before
 	-o-text-overflow: clip;
 	text-overflow: clip;
 	letter-spacing: 2px;
-	background:  #CC6666;
+	background:  #0186ba;
 	-webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
 	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
 	text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
@@ -534,13 +544,14 @@ ul.contact li a.icon-rss:before
 	width: 40%;
 }
 
-.btn:hover {
+.btn:hover  {
 	background:#CC4949;
+	cursor: hand;
 }
 
 .formData input {
 	color:white;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family:  'Source Sans Pro', sans-serif;
 	font-weight:500;
 	font-size: 18px;
 	border-radius: 5px;
@@ -553,6 +564,7 @@ ul.contact li a.icon-rss:before
 	width:95%;
 	box-sizing: border-box;
 	outline:0;
+	margin-top: 8px;
 }
 
 
@@ -563,14 +575,14 @@ ul.contact li a.icon-rss:before
 
 input.ng-invalid.ng-touched
 {
-	border:2px solid red;
+	border:2px solid #FA1126;
 }
 .formData a
 {
 	font-size: 15px;
-	color: black;
+	color: gold;
 	text-decoration: none;
-	font-family: "Times New Roman";
+	font-family:  'Source Sans Pro', sans-serif;
 }
 
 .formData a:hover
@@ -585,14 +597,19 @@ input.ng-invalid.ng-touched
 #register
 {
 	width: 305px;
-	height: 480px;
+	min-height:480px;
 	margin: 0 auto;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	border: solid 1px gainsboro;
+	border: solid 1px #0186ba;
 	border-radius: 5px;
-	background:rgb(30,30,40);
+	background:rgba(30,30,40,0.8);
 	text-align: center;
+}
+
+#register input.ng-invalid.ng-touched
+{
+	border:2px solid #FA1126;
 }
 
 /*********************************************************************************/
@@ -600,19 +617,27 @@ input.ng-invalid.ng-touched
 /*********************************************************************************/
 
 #contact  {
-	background:rgb(30,30,40);
+	background:rgba(30,30,40,0.8);
 	width: 500px;
-	height: 405px;
+	min-height: 405px;
 	margin: 0 auto;
-	border: solid 1px white;
+	border: solid 1px #0186ba;
 	border-radius: 5px;
 
 }
-#contact form { max-width:420px; margin:50px auto; }
+#contact form {
+	max-width:420px;
+	margin:50px auto;
+	color: green;
+}
+
+
+
+
 
 .feedback-input {
 	color:white;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family:  'Source Sans Pro', sans-serif;
 	font-weight:500;
 	font-size: 18px;
 	border-radius: 5px;
@@ -636,9 +661,9 @@ textarea {
 }
 
 #contact [type="submit"] {
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	font-family:  'Source Sans Pro', sans-serif;
 	width: 100%;
-	background:#CC6666;
+	background:#0186ba;
 	border-radius:5px;
 	border:0;
 	cursor:pointer;
@@ -650,7 +675,13 @@ textarea {
 	margin-top:-4px;
 	font-weight:700;
 }
-#contact [type="submit"]:hover { background:#CC4949; }
+#contact [type="submit"]:hover {
+	cursor: hand;
+	background:#CC4949; }
+
+/*********************************************************************************/
+/* Gallery                                                                  */
+/*********************************************************************************/
 
 #galleryAlbum h1
 {
@@ -667,17 +698,90 @@ textarea {
 
 #galleryAlbum img
 {
-	width:150px;
-	height:150px;
+	width:100px;
+	height:100px;
 	float:left;
 	border: solid 2px white;
 	margin-bottom: 30px;
 }
 
+#galleryAlbum img:first-child
+{
+	margin-left: 20px;
+}
 #galleryAlbum img:hover
 {
 	opacity: 0.7;
 	cursor: hand;
 }
 
+#galleryAlbum a
+{
+	color: white;
+	text-decoration: dashed;
+	color: #0186ba;
+}
+
+/*********************************************************************************/
+/* Comunicats                                                              */
+/*********************************************************************************/
+
+.info
+{
+	color: green;
+}
+
+.error
+{
+	color: #FA1126;
+}
+
+/*********************************************************************************/
+/*Admin panel                                                                 */
+/*********************************************************************************/
+#panelAdmin
+{
+	width: 700px;
+	height: auto;
+	background-color: rgba(35,35,35,0.5);
+	font-family:  'Source Sans Pro', sans-serif;
+	margin: 0 auto;
+}
+#panelAdmin h1
+{
+	color: white;
+
+}
+#panelAdmin h4
+{
+	color: white;
+}
+#panelAdmin label
+{
+	color: white;
+}
+
+#panelAdmin img
+{
+	width: 60px;
+	height: 60px;
+}
+#admin h4
+{
+	color: white;
+
+}
+
+#upload
+{
+	background-color: rgba(35,35,35,0.7);
+	font-family:  'Source Sans Pro', sans-serif;
+	width: 350px;
+	height: auto;
+	margin: 0 auto;
+}
+#upload h2
+{
+	color: white;
+}
 
