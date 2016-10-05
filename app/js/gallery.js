@@ -1,4 +1,4 @@
-var app = angular.module('GalleryApp', ['angular-lightbox']);
+var app = angular.module('GalleryApp', []);
 
 app.controller('album1Ctrl', function($scope, $http) {
 
@@ -44,8 +44,6 @@ app.controller('album1Ctrl', function($scope, $http) {
     });
   };
 
-
-
   $http({
     method  : 'GET',
     url     : 'http://localhost:8080/photo/allPhotos',
@@ -58,10 +56,5 @@ app.controller('album1Ctrl', function($scope, $http) {
     $scope.images = 'Nie mogę załadować zdjęcia!';
   });
 
-  $scope.foobar = function() {
-    $scope.images = [
-      'http://i.huffpost.com/gen/1234822/images/r-FORT-SOUSMARINE-large570.jpg',
-      'http://www.nordforsk.org/en/store-satsinger/nordforsks-store-satsinger/header-image_header'
-    ];
-  };
+
 });
